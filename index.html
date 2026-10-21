@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Skylarq Signal QA</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="hero">
+    <section class="panel intro">
+      <p class="eyebrow">Skylarq application-layer AI workflow</p>
+      <h1>Enriched signal QA</h1>
+      <p class="lede">Audit company and people records before they feed WhatsApp agents, go-to-market workflows, or a distributed enrichment platform.</p>
+      <div class="badges"><span>Duplicate detection</span><span>Domain checks</span><span>Freshness routing</span></div>
+    </section>
+    <section class="panel workspace">
+      <label for="recordInput">Enrichment records</label>
+      <textarea id="recordInput" spellcheck="false" placeholder='company,person,title,domain,updated_at\nAcme,Riya Shah,CTO,acme.ai,2026-09-18\nAcme,Riya Shah,,acme.ai,2026-09-18'></textarea>
+      <div class="actions"><button id="auditButton" type="button">Audit records</button></div>
+      <section id="results" class="results" aria-live="polite"><p class="empty-state">Paste enriched company or people records to audit them.</p></section>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
